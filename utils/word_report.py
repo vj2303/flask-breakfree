@@ -12,7 +12,7 @@ from docx.enum.text import WD_PARAGRAPH_ALIGNMENT, WD_ALIGN_PARAGRAPH
 from docx.enum.table import WD_ALIGN_VERTICAL
 from docx.enum.style import WD_STYLE_TYPE
 from docx.oxml.ns import qn
-from application.utils.excel import read_scores_from_excel
+from utils.excel import read_scores_from_excel
 
 EXCEL_FILE_PATH = r'applications/SJT_Scores_Overall_with_Competency_Scores_Batch_1_Post_Assessment.xlsx'
 EXCEL_FILE_PATH1 = r'applications/excel_data_proper.xlsx'
