@@ -1,4 +1,4 @@
-from models import User
+"""Controllers package initializer.
 
-def get_all_users():
-    return User.query.all() 
+Kept minimal to avoid side effects during imports.
+"""

@@ -1,11 +1,4 @@
-from flask_sqlalchemy import SQLAlchemy
+"""Models package initializer.
 
-db = SQLAlchemy()
-
-class User(db.Model):
-    id = db.Column(db.Integer, primary_key=True)
-    username = db.Column(db.String(80), unique=True, nullable=False)
-    email = db.Column(db.String(120), unique=True, nullable=False)
-
-    def __repr__(self):
-        return f'<User {self.username}>' 
+No ORM is required for this project. Left intentionally minimal.
+"""

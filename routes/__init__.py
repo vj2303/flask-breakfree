@@ -1,12 +1,5 @@
-from flask import Blueprint, jsonify
-from controllers import get_all_users
+"""Routes package initializer for all blueprints."""
 
-main_blueprint = Blueprint('main', __name__)
-
-@main_blueprint.route('/users')
-def users():
-    users = get_all_users()
-    return jsonify([
-        {'id': user.id, 'username': user.username, 'email': user.email}
-        for user in users
-    ]) 
+from .video_routes import video_bp  # noqa: F401
+from .health_routes import health_bp  # noqa: F401
+from .profile_routes import profile_bp  # noqa: F401
