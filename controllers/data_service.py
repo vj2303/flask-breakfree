@@ -1,10 +1,10 @@
 # controllers/data_service.py
 from application import db
-from application.utils.text import clean_text, get_proper_descriptor, get_competency_for_descriptor
+from utils.text import clean_text, get_proper_descriptor, get_competency_for_descriptor
 
-from application.models.competencies import ( InboxActivity, CBI, CaseStudyPresentation,CaseStudyAnalysis, GroupDiscussion, RolePlay)
+from models.competencies import ( InboxActivity, CBI, CaseStudyPresentation,CaseStudyAnalysis, GroupDiscussion, RolePlay)
 from sqlalchemy import inspect
-from application.models.participant import (Participants)
+from models.participant import (Participants)
 from typing import Dict, Tuple  # for type hinting
 
 
