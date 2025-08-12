@@ -1,16 +1,16 @@
 from flask import Blueprint, request, render_template, redirect, url_for, flash, send_file
 from flask_login import login_required, current_user
-from application import db
-from application.models import Participants, Report
-from application.controllers.data_service import fetch_all_data, fetch_all_data_for_leader
-from application.controllers.llm_readiness import data_for_llm, generate_readliness_analysis
-from application.controllers.llm_competency import generate_competency_report
-from application.controllers.llm_summary import generate_summary
-from application.utils.excel import read_scores_from_excel, read_scores_from_excel_for_leader
-from application.utils.word_report import generate_word_report
-from application.utils.emailer import send_email
-from application.utils.stats import calculate_overall_average
-from application.config.settings import EXCEL_FILE_PATH1, EXCEL_FILE_PATH2, EXCEL_FILE_PATH3
+from extension import db
+from models import Participants, Report
+from controllers.data_service import fetch_all_data, fetch_all_data_for_leader
+from controllers.llm_readiness import data_for_llm, generate_readliness_analysis
+from controllers.llm_competency import generate_competency_report
+from controllers.llm_summary import generate_summary
+from utils.excel import read_scores_from_excel, read_scores_from_excel_for_leader
+from utils.word_report import generate_word_report
+from utils.emailer import send_email
+from utils.stats import calculate_overall_average
+from config.settings import EXCEL_FILE_PATH1, EXCEL_FILE_PATH2, EXCEL_FILE_PATH3
 # application/routes/llmwork.py (append)
 from flask import request, jsonify
 import warnings
