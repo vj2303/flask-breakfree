@@ -1,6 +1,6 @@
 # utils/emailer.py
 from flask_mail import Message
-from application import mail
+from extension import mail
 import smtplib
 from email.mime.multipart import MIMEMultipart
 from email.mime.base import MIMEBase
