@@ -1,4 +1,4 @@
-from application import db 
+from extension import db 
 from flask import current_app
 # from itsdangerous import URLSafeTimedSerializer as Serializer # type: ignore
 from itsdangerous import URLSafeTimedSerializer as Serializer 
