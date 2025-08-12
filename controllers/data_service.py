@@ -1,5 +1,5 @@
 # controllers/data_service.py
-from application import db
+from extension import db
 from utils.text import clean_text, get_proper_descriptor, get_competency_for_descriptor
 
 from models.competencies import ( InboxActivity, CBI, CaseStudyPresentation,CaseStudyAnalysis, GroupDiscussion, RolePlay)
